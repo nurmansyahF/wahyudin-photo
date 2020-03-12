@@ -10,6 +10,8 @@
 
 @font-face { font-family: "Lato"; font-display: swap; src: local("Lato"); src: url("../fonts/lato-black.eot"); src: url("../fonts/lato-black.eot#iefix") format("embedded-opentype"), url("../fonts/lato-black.woff2") format("woff2"), url("../fonts/lato-black.woff") format("woff"), url("../fonts/lato-black.ttf") format("truetype"), url("../fonts/lato-black.svg") format("svg"); font-style: normal; font-weight: 700; }
 
+@font-face { font-family: "Signature"; font-display: swap; src: local("Signature"); src: url("../fonts/quick-signature.eot"); src: url("../fonts/quick-signature.eot#iefix") format("embedded-opentype"), url("../fonts/quick-signature.woff2") format("woff2"), url("../fonts/quick-signature.woff") format("woff"), url("../fonts/quick-signature.ttf") format("truetype"), url("../fonts/quick-signature.svg") format("svg"); font-style: normal; font-weight: 400; }
+
 /* Typography */
 p { margin: 0 0 24px; padding: 0; }
 
@@ -96,7 +98,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   *::-webkit-scrollbar { width: 10px; background-color: #FFF; }
   *::-webkit-scrollbar-thumb { border: 1px solid #FFF; border-width: 3px 0 3px 1px; background-color: #232323; } }
 
-html, body { font-size: 14px; line-height: 24px; font-family: "Lato", -apple-system, helvetica neue, helvetica, Roboto, Arial, sans-serif; font-weight: normal; padding: 0; margin: 0; background-color: #FFFFFF; color: #2C3E50; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+html, body { font-size: 14px; line-height: 24px; font-family: "Signatue", -apple-system, helvetica neue, helvetica, Roboto, Arial, sans-serif; font-weight: normal; padding: 0; margin: 0; background-color: #FFFFFF; color: #2C3E50; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* Component style */
@@ -351,6 +353,12 @@ button:focus, a:focus { outline: none !important; }
 
 .bg-img:before { content: ""; display: block; padding: 50% 0; }
 
+.font-signature { font-family: "Signature", -apple-system, helvetica neue, helvetica, Roboto, Arial, sans-serif; font-size: 72px; line-height: 1.3em; }
+
+@media (max-width: 1025px) { .font-signature { font-size: 52px; } }
+
+@media (max-width: 767px) { .font-signature { font-size: 32px; } }
+
 .page-numbers { text-align: center; margin: 0 auto 120px; }
 
 .page-numbers ul { margin-bottom: 0; margin-left: -15px; margin-right: -15px; padding-left: 0; }
@@ -532,9 +540,11 @@ button:focus, a:focus { outline: none !important; }
 
 .home-gallery { padding-bottom: 50px; }
 
+.home-gallery .sdesc { margin-bottom: 20px; }
+
 .home-gallery h2 { text-align: center; }
 
-.home-gallery .box-img { margin-bottom: 36px; }
+.home-gallery .box-img { margin-bottom: 48px; }
 
 .home-gallery .box-img .item-photo { margin-bottom: 10px; }
 
