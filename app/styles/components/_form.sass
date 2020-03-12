@@ -1,0 +1,28 @@
+/* Form */
+
+.form-group
+  margin-bottom: 16px
+  label
+    display: block
+    width: 100%
+  .form-control
+    width: 100%
+    max-width: 100%
+    border: none
+    border-bottom: 1px solid #cccccc
+    &:active,
+    &:focus,
+    &:hover
+      outline: none
+      border-color: $secondary
+
+
+.form-action
+  text-align: right
+  .btn-primary
+    padding: 8px 24px
+
++mobile()
+  .form-group
+    .col-md-6
+      margin-bottom: 16px

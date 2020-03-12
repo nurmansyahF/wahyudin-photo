@@ -1,0 +1,201 @@
+/* Contents */
+
+.item-photo
+  width: 100%
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px
+  &:before
+    content: "";
+    display: block;
+    padding: 30% 0;
+  &:after
+    content: ""
+    position: absolute
+    transition: opacity .3s ease
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #000000
+    opacity: 0
+    z-index: 2
+  &:hover
+    cursor: pointer
+    &:after
+      opacity: .2
+
+.home-gallery
+  padding-bottom: 50px
+  h2
+    text-align: center
+  .box-img
+    margin-bottom: 36px
+    .item-photo
+      margin-bottom: 10px
+    h3
+      margin-bottom: 8px
+
+.page-journal
+  h2
+    text-align: center
+.journal-gallery
+  padding-bottom: 50px
+  a
+    color: $text
+    &:focus,
+    &:hover,
+    &:active
+      text-decoration: none
+  & > .row
+    marging-left: -10px
+    margin-right: -10px
+  .col-6
+    padding-left: 10px
+    padding-right: 10px
+  .item-photo
+    margin-bottom: 10px
+  .sdesc
+    .date
+      font-size: 12px
+      line-height: 1.5em
+    .title h3
+      font-size: 18px
+      line-height: 1.5em
+      font-weight: 500
+
+.about-page
+  padding-bottom: 150px
+  .masthead
+    width: 100%
+    margin-bottom: 50px
+    .bg-img:before
+      padding: 18% 0
+  .photo-profile
+    .bg-img:before
+      padding: 60% 0
+
+  .wrapper-text
+    padding-bottom: 80px
+    height: 100%
+    position: relative
+    .name
+      position: absolute
+      width: 100%
+      left: 0
+      bottom: 0
+      padding-bottom: 5px
+      border-bottom: 1px solid #cccccc
+
+.connect-page
+  h2.w-aksen
+    text-align: center
+    margin-bottom: 50px
+  .bg-img
+    &:before
+      padding: 40% 0
+  .contact-form
+    padding: 50px 0
+    h3
+      text-align: center
+
+.page-journal-single
+  padding-bottom: 100px
+  .head-section
+    text-align: center
+    margin-bottom: 30px
+  .js-gallery
+    .item-photo
+      margin-bottom: 5px
+    .caption
+      margin-bottom: 15px
+      h3
+        margin-bottom: 5px
+    .multi-item
+      // margin-bottom: 5px
+      &.row
+        margin-left: -2.5px
+        margin-right: -2.5px
+      .col,
+      .col-12
+        padding-left: 2.5px
+        padding-right: 2.5px
+      .text
+        padding: 10px
+        display: flex
+        width: 100%
+        height: 100%
+        justify-content: center
+        align-items: center
+        font-size: 18px
+        overflow: hidden
+
+  .detail-desc
+    margin-bottom: 30px
+    dl
+    dt
+      float: left
+      padding-right: 10px
+      position: relative
+      font-weight: 400
+      &:after
+        content: " :"
+    dd a
+      color: $text
+
+
+
++mobile()
+  .home-gallery
+    .item
+      &:before
+        padding: 50% 0
+  .about-page
+    padding-bottom: 120px
+    .masthead
+      margin-top: -30px
+      .bg-img:before
+        padding: 35% 0
+    .photo-profile
+      margin-bottom: 30px
+    .wrapper-text
+      article
+        // padding: 0 15px
+      .w-aksen
+        padding: 0
+  .journal-gallery
+    .sdesc
+      .title
+        h3
+          font-size: 14px
+          line-height: 1.5em
+
+  .page-journal-single
+    .multi-item
+      .col
+        flex: 0 0 100%
+        max-width: 100%
+
+  .connect-page
+    .slider-xs
+      margin-bottom: 50px
+      &.row
+        margin-left: 0
+        margin-right: 0
+      .col-md-4
+        padding-left: 0
+        padding-right: 0
+      .bg-img
+        &:before
+          padding: 3
+
+  .form-action
+    text-align: center
+    .btn-primary
+      width: 100%
+
+
+

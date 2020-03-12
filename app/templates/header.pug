@@ -1,0 +1,30 @@
+header#header.header
+  .header_wrap.container
+    .row.justify-content-center
+      .col-md-12
+        a.header_logo(href="home.html")
+           img.company-logo(src="images/logo-small.jpg")
+      .col-md-12
+        nav.header_nav
+          ul.nav_menu
+            li(class=activepage=="Home"? "active":"")
+              a(href="home.html").link Home
+            li(class=activepage=="About"? "active":"")
+              a(href="about.html").link About
+            li(class=activepage=="Journal"? "active":"")
+              a(href="journal.html").link Journal
+            li(class=activepage=="Connect"? "active":"")
+              a(href="connect.html").link Connect
+          .nav_foot.hidden-sm-up
+            .socmed
+              a(href='https://www.instagram.com/' target="_blank")
+                img.svg(src='images/instagram-icon.svg')
+              a(href='https://web.whatsapp.com/' target="_blank")
+                img.svg(src='images/whatsapp-icon.svg')
+            span WAHYUDIN PHOTOGRAPH
+
+        .header_menu_icon
+          span
+          span
+          span
+

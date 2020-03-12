@@ -1,0 +1,25 @@
+extends templates/layout.pug
+
+block vars
+  - var activepage = "About";
+
+
+block content
+  .about-page
+    .container
+      .row
+        .masthead
+          .bg-img(data-src="images/masthead-about.jpg")
+    .container
+      .row
+        .col-md-3
+          .photo-profile
+            .photo.bg-img(data-src="images/photo-profile.jpg")
+        .col-md-9
+          .wrapper-text
+            article
+              h2.w-aksen about me
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ut neque. Quo, soluta amet. Laboriosam perspiciatis saepe assumenda rerum, quis provident et pariatur nemo voluptate minima? Explicabo voluptatum autem id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ut neque. Quo, soluta amet. Laboriosam perspiciatis saepe assumenda rerum.
+              p Laboriosam perspiciatis saepe assumenda rerum, quis provident et pariatur nemo voluptate minima?. Quis provident et pariatur nemo voluptate minima? Explicabo voluptatum autem id.
+
+            .name WAHYUDIN PHOTOGRAPH

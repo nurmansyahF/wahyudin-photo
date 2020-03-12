@@ -1,0 +1,48 @@
+/* Footer */
+
+.footer
+  .container
+    padding-top: 20px
+    padding-bottom: 20px
+    border-top: 1px solid #cccccc
+  h3
+    font-size: 16px
+    line-height: 1.5em
+    margin-bottom: 10px
+    a
+      color: $text
+      text-decoration: none
+      &:hover
+        text-decoration: none
+  .text
+    font-size: 12px
+    line-height: 1.5em
+    margin-bottom: 15px
+  .socmed
+    text-align: right
+    margin-bottom: 20px
+    a
+      display: inline-block
+      margin-right: 15px
+      &:last-child
+        margin-right: 0
+  .svg
+    width: 20px
+    height: 20px
+    color: $text
+    &:hover
+      color: $secondary
+  .cpyright
+    width: 100%
+    font-size: 12px
+    line-height: 1.5em
+    text-align: right
+
++mobile()
+  .footer
+    text-align: center
+    .container
+      width: calc(100% - 30px)
+    .socmed,
+    .cpyright
+      text-align: center

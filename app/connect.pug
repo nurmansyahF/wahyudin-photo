@@ -1,0 +1,45 @@
+extends templates/layout.pug
+
+block vars
+  - var activepage = "Connect";
+
+
+block content
+  .connect-page
+    h2.w-aksen Connecting and make something
+    .container
+      .row.slider-xs.animate.fade-in
+        .col-md-4
+          .item-photo.bg-img(data-src="images/photo-01.jpg")
+        .col-md-4
+          .item-photo.bg-img(data-src="images/photo-02.jpg")
+        .col-md-4
+          .item-photo.bg-img(data-src="images/photo-03.jpg")
+      .row.justify-content-center
+        .col-sm-4
+          .contact-form
+            h3 tell me your stories
+            form(action="")
+              .form-group.row
+                .col-md-6
+                  label
+                    | name
+                    span *
+                  input.form-control(type="text")
+                .col-md-6
+                  label
+                    | e-mail
+                    span *
+                  input.form-control(type="text")
+              .form-group
+                label
+                  | phone
+                  span *
+                input.form-control(type="text")
+              .form-group
+                label
+                  | wedding date
+                  span *
+                input.form-control(type="text")
+              .form-action
+                button.btn.btn-primary(type="submit") SUBMIT
